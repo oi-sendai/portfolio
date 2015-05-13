@@ -1,30 +1,38 @@
 // Default JavaScript Functions and Initiations
 $(document).ready(function() {
 
-    // videojs('job-application').ready(function(){
+	var dostuff = function(){
 
-    //   	console.log(this.options()); //log all of the default videojs options
-      
-    //    // 	// Store the video object
-    //   	var myPlayer = this, id = myPlayer.id();
-      	
-    //   	// // Make up an aspect ratio
-    //   	var aspectRatio = 430/640; 
+	    videojs('job-application').ready(function(){
 
-    //   	function resizeVideoJS(){
-    //     	var width = document.getElementById(id).parentElement.offsetWidth;
-    //     	myPlayer.width(width).height( width * aspectRatio );
-    //   	}
-      
-    //   	// Initialize resizeVideoJS()
-    //   	resizeVideoJS();
-    //   	// // Then on resize call resizeVideoJS()
-    //   	window.onresize = resizeVideoJS;
+	      	console.log(this.options()); //log all of the default videojs options
+	      
+	       // 	// Store the video object
+	      	var myPlayer = this, id = myPlayer.id();
+	      	
+	    //   	// // Make up an aspect ratio
+	      	var aspectRatio = 430/640; 
 
+	      	function resizeVideoJS(){
+	        	var width = document.getElementById(id).parentElement.offsetWidth;
+	        	myPlayer.width(width).height( width * aspectRatio );
+	      	}
+	      
+	    //   	// Initialize resizeVideoJS()
+	      	resizeVideoJS();
+	    //   	// // Then on resize call resizeVideoJS()
+	      	window.onresize = resizeVideoJS;
+	      	  this.play(); // if you don't trust autoplay for some reason
+
+		  this.on('ended', function() {
+		    alert("I hope you enjoyed it. Because your one blew me away.");
+		  });
+	    });
+	}
 
       	/// Cool Stuff Here
 
-      	var tl = new TimelineLite()
+      	var tl = new TimelineLite({onComplete:dostuff})
       	var zero = $('.zero'), one = $('.one'), two = $('.two'), three = $('.three'), four = $('.four'), five = $('.five'), six = $('.six'),
       	seven = $('.seven'), eight = $('.eight'), nine = $('.nine'), ten = $('.ten'), topbox = $('.application');
 
@@ -60,7 +68,8 @@ $(document).ready(function() {
 		.to(five, 2, {x:600, ease: Power2.easeOutIn, opacity:1}, '-=2')
 		.from(nine, 2, {x:-500, opacity:1, ease: Power2.easeOutIn})
 		.to(eight, 2, {x:600, ease: Power2.easeOutIn, opacity:1}, '-=2')
-		.to(topbox, 1, {height:600, ease: Bounce.easeOut})
+		.to(topbox, 3, {height:600, ease: Bounce.easeOut})
+		.to('#job-application', 3, {opacity:1}, '-=3')
 
 
 
@@ -76,12 +85,7 @@ $(document).ready(function() {
 
 
 
-	  // this.play(); // if you don't trust autoplay for some reason
 
-	  // this.on('ended', function() {
-	  //   console.log("Mostly I make websites, sometimes I have days off, this is what I do on my off days.");
-	  // });
-   //  });
 
   
 }); // end document ready

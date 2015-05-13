@@ -383,3 +383,6 @@ display:none;
 color:#fff;
 
  }
+ #job-application {
+ 	opacity: 0;
+ }
