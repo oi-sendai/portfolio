@@ -25,7 +25,7 @@ $(document).ready(function() {
 	      	  this.play(); // if you don't trust autoplay for some reason
 
 		  this.on('ended', function() {
-		    alert("I hope you enjoyed it. Because your one blew me away.");
+		    alert("I hope you enjoyed it. If you got this far my email address is Andy.L.MacKay@gmail.com. I look forward to hearing from you.");
 		  });
 	    });
 	}
