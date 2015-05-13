@@ -242,7 +242,10 @@ span.div-link-hack {
 	width: 600px;
 	height:400px;
 	overflow: hidden;
-	background:#c4c4c4;
+	/*background:#c4c4c4;*/
+}
+.portfolio {
+	opacity: 0;
 }
 .zero 
 {
@@ -323,17 +326,25 @@ color:#fff;
 }
 .six /*">*/
 {
-display:none;
+/*display:none;*/
 
 color:#fff;
 }
 .box /*">landfilm</li>*/
 {
-display:none;
-	width:100px;
-	height:70px;
-	background: darkgreen;
+/*display:none;*/
+background:#272924;
+padding:20px;
+overflow: hidden;
+	width:300px;
+	height:300px;
+
+
 color:#fff;
+}
+.box img {
+	width: 260px;
+
 }
 .seven /*"> cv*/
 {
@@ -343,13 +354,26 @@ color:#fff;
 }
 .eight /*">But that's boring</h3>*/
 {
-display:none;
+position: absolute;
+left:20px;
+top:20px;
+opacity: 0;
+/*text-align: center;*/
+/*margin:20px 20px;*/
+font-size: 30px;
 
 color:#fff;
 } 
 .nine /*">So, I made you a video</h3>*/
  {
-display:none;
+position: absolute;
+left:20px;
+top:20px;
+opacity: 0;
+/*text-align: center;*/
+/*margin:20px 20px;*/
+font-size: 30px;
+
 color:#fff;
 
  }  

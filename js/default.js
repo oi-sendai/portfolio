@@ -53,6 +53,16 @@ $(document).ready(function() {
 		// // And professional
 		.from(five, 2, {x:-500, opacity:1, ease: Power2.easeOutIn})
 		.to(five, 2, {opacity:1}, '-=2')
+		// but tired
+		.to('.portfolio', 2, {opacity:1})
+		// // yet enthusiastic
+		.from(eight, 2, {x:-500, opacity:1, ease: Power2.easeOutIn})
+		.to(five, 2, {x:600, ease: Power2.easeOutIn, opacity:1}, '-=2')
+		.from(nine, 2, {x:-500, opacity:1, ease: Power2.easeOutIn})
+		.to(eight, 2, {x:600, ease: Power2.easeOutIn, opacity:1}, '-=2')
+		.to(topbox, 1, {height:600, ease: Bounce.easeOut})
+
+
 
 		// Explain your position
 
