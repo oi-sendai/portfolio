@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Base</title>
+  <title>Andrew MacKay</title>
 
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,10 @@
   <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="video-js.css">
-  <link rel="stylesheet" href="dessol.css">
+  <!-- <link rel="stylesheet" href="video-js.css"> -->
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <!-- <link rel="stylesheet" href="dessol.css"> -->
+  <!-- <link rel="stylesheet" href="soil.css"> -->
   <script src="js/vendor/modernizr.min.js"></script>
   <!-- // <script src="ocanvas.js"></script> -->
   <!--[if lt IE 9 ]>
@@ -24,22 +26,111 @@
 </head>
 <body>
 <div class="wrapper">
-  <header class="container">
+  <!-- <header class="container">
     <div class="row fix-header-alignment"> 
     <div class="header">
       <div class="col-12 col-desktop-6">
         <h2 class="company-name">Agile Gardening</h2>
-        <!-- <h3 class="page-context"><span class="standout">code</span> test</h3> -->
+        <!-- <h3 class="page-context"><span class="standout">code</span> test</h3> - ->
       </div>
       <div class="col-12 col-desktop-6">
-        <!-- <h1 class="slogan">Do we need to say: <span class="standout">scroll?</span></h1> -->
-    </div><!-- end header -->
+        <!-- <h1 class="slogan">Do we need to say: <span class="standout">scroll?</span></h1> - ->
+    </div><!-- end header - ->
       </div>
     </div>
   </header>
-
-  <section class="container">
+  -->
+  <section class="container container-full">
     <div class="row">
+      <nav class="col-3 sidebar">
+        Menu
+      </nav>
+      <main class="col-9 main">
+          <section class="row">
+            <article class="col-12">
+              <h1 class="intro">Hello there!</h1><br/>
+              <h2 class="strapline">My name is Andrew MacKay,</h2><br/>
+              <p class="subline">I'm a professional web developer with over five years experience in building high quality innovative websites</p>
+            </article>
+          </section>
+          <section class="main-feature">
+          <br/>
+          <br/>
+          <br/>
+            <img src="img/2tall-sprite.png"/>
+            <img src="img/jamesdunbar-sprite.png"/>
+            <img src="img/me.png"/>
+           <!--  <div class="row part-row">
+              <article class="col-4 part">
+                  jlkjlk
+              </article>
+              <article class="col-8 part">
+                  jlkjlk
+              </article>
+            </div>
+            <div class="row part-row">
+              <article class="col-6 part">
+                <h1>Hello there!</h1>
+              </article>
+              <article class="col-6">
+              <h3>My name is Andrew MacKay,</h3>
+            </article>
+            </div>
+          <div class="row part-row">
+            <article class="col-8 part">
+              <h1>Hello there!</h1>
+            </article>
+            <article class="col-4">
+              <h3>My name is Andrew MacKay,</h3>
+            </article> -->
+          </div>
+        </section>
+
+
+
+      </main>
+    </div>
+  </section>
+<!--     <div class="row">      
+          <img src="img/me.png">
+          <div class="col-4">
+                <h1 class="slogan">Do we need to say: <span class="standout">scroll?</span></h1>
+                <a href="http://deaddonkeysfearnohyeanas.com"><img src="img/landfilm.png"/></a>
+                <p>a collaboration</p>
+          </div>
+          <div class="col-4">
+                <h1 class="slogan"><span class="standout">responsive?</span></h1>
+                <a href="http://2tall.com"><img src="img/2tall.png"/></a>
+                <p>Magento</p>
+          </div>
+          <div class="col-4 right">
+                <h1 class="slogan"><span class="standout">wordpress?</span></h1>
+                <a href="http://agorapsi.ro"><img src="img/agorapsi.png"/></a>
+                <p>cheap and cheerful</p>
+          </div>
+    </div>
+        <div class="row portfolio">
+          <div class="col-4">
+                <h1 class="slogan">James Dunbar is: <span class="standout">fantastic!</span></h1>
+                <a href="http://jamesdunbarphotography.com"><img src="img/jamesdunbar.png"/></a>
+                <p>be amazed by insects</p>
+          </div>
+          <div class="col-4">
+                <h1 class="slogan"><span class="standout">posh?</span></h1>
+                <a href="http://bamford.co.uk"><img src="img/bamford.png"/></a>
+                <p>Agency wordpress</p>
+          </div>
+          <div class="col-4">
+                <h1 class="slogan"><span class="standout">full stack?</span></h1>
+                <a href="http://unstructured-networking.com"><img src="img/unstr.png"/></a>
+                <p>My side project</p>
+          </div>
+        </div>
+      </div> -->
+
+  
+  <!-- <section class="container"> -->
+    <!-- <div class="row"> -->
 <!--       <nav class="col-12 col-desktop-3">
         <h3 class="nav-title">In this issue:</h3>
         <ul class="vertical-nav list-unstyled">
@@ -56,14 +147,15 @@
 
 
 
-      <main class="col-12 col-desktop-12 nn">
+<!--       <main class="col-12 col-desktop-12 nn">
       <div class="application">
       <video id="job-application" class="video-js vjs-default-skin" controls
          preload="auto" poster="really-cool-video-poster.jpg"
          data-setup='{}'>
-          <!-- <source src="video/agile.mp4" type='video/mp4'> -->
-          <source src="video/agile.ogg" type='video/ogg'>
-          <!-- <source src="really-cool-video.webm" type='video/webm'> -->
+          <!- - <source src="video/agile.mp4" type='video/mp4'> -- >
+          <!-- <source src="video/agile.ogg" type='video/ogg'> -->
+          <!-- <source src="really-cool-video.webm" type='video/webm'> - - 
+          >
           <p class="vjs-no-js">
             To view this video please enable JavaScript, and consider upgrading to a web browser
             that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
@@ -81,54 +173,8 @@
           <h3 class="eight">But that's boring</h3>
           <h3 class="nine">So, I made a video (Chrome only!)</h3>
           <div class="ten">video</div>
-      </div>
-      <div class="row portfolio">
-        <div class="col-12 col-desktop-8">
-          <img src="img/me.png">
-        </div>
-        <div class="col-12 col-desktop-4">
+      </div> -->
 
-          <ul class="six">
-            <li class="box">
-              <h1 class="slogan">Do we need to say: <span class="standout">scroll?</span></h1>
-              <a href="http://deaddonkeysfearnohyeanas.com"><img src="img/landfilm.png"/></a>
-              <p>a collaboration</p>
-            </li>
-
-            <li class="box">
-              <h1 class="slogan"><span class="standout">responsive?</span></h1>
-              <a href="http://2tall.com"><img src="img/2tall.png"/></a>
-              <p>Magento</p>
-            </li>
-
-            <li class="box">
-              <h1 class="slogan"><span class="standout">wordpress?</span></h1>
-              <a href="http://agorapsi.ro"><img src="img/agorapsi.png"/></a>
-              <p>cheap and cheerful</p>
-            </li>
-            
-            <li class="box">
-              <h1 class="slogan">James Dunbar is: <span class="standout">fantastic!</span></h1>
-              <a href="http://jamesdunbarphotography.com"><img src="img/jamesdunbar.png"/></a>
-              <p>be amazed by insects</p>
-            </li>
-
-            <li class="box">
-              <h1 class="slogan"><span class="standout">posh?</span></h1>
-              <a href="http://bamford.co.uk"><img src="img/bamford.png"/></a>
-              <p>Agency wordpress</p>
-            </li>
-
-            <li class="box">
-              <h1 class="slogan"><span class="standout">full stack?</span></h1>
-              <a href="http://unstructured-networking.com"><img src="img/unstr.png"/></a>
-              <p>My side project</p>
-            </li>
-          </ul>
-          </div>
-      </div>
-
-      </div>
 
 
 
@@ -148,10 +194,10 @@
             <!- - </div> -->
           <!-- </article> -->
         
-        </div>          
-      </main>
-    </div>
-  </section>
+        <!-- </div>           -->
+      <!-- </main> -->
+    <!-- </div> -->
+  <!-- </section> -->
 
 <!--   <aside class="container">
     <div class="row additional">
@@ -186,7 +232,7 @@
     </div>
   </aside> -->
 
-<div class="footer">
+<!-- <div class="footer">
   <footer class="container">
     <div class="row">
         <nav class="col-12 col-desktop-4">
@@ -203,7 +249,7 @@
         </main>
     </div>
   </footer>
-</div><!-- end .footer -->
+</div><!- - end .footer -->
 
 </div>
 
@@ -214,7 +260,7 @@
 <script src="js/gs/TweenMax.js"></script>
 <script src="js/gs/TimelineMax.js"></script>
 <script src="js/gs/TextPlugin.js"></script>
-<script src="js/video.js"></script>
+<!-- <script src="js/video.js"></script> -->
 <script src="js/default.js"></script>
 
 

@@ -187,8 +187,8 @@ span.div-link-hack {
   left: 0;
   /* edit: added z-index */
   z-index: 1;
-  /* edit: fixes overlap error in IE7/8, 
-     make sure you have an empty gif */
+   edit: fixes overlap error in IE7/8, 
+     make sure you have an empty gif 
   background-image: url('empty.gif');
 }
 
@@ -384,5 +384,5 @@ color:#fff;
 
  }
  #job-application {
- 	opacity: 0;
+ 	/*opacity: 0;*/
  }

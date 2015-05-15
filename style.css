@@ -995,6 +995,75 @@ dl:after {
     padding: 0;
   }
 }
+@media only screen and (min-width: 979px) {
+  .container-full {
+    width: 100%;
+  }
+  .sidebar {
+    background: #c5c4c3;
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+  }
+  .main {
+    background: #F3F1F2;
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+  }
+  .main h1 {
+    color: #88B814;
+  }
+  .starboard {
+    background: #272924;
+    background: green;
+    padding: 20px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    color: #fff;
+  }
+  .starboard img {
+    width: 100%;
+  }
+  .part {
+    min-height: 200px;
+    border-right: 2px solid #c5c4c3;
+  }
+  .part-row {
+    border-bottom: 2px solid #c5c4c3;
+    max-width: 900px;
+    background: orange;
+    height: 300px;
+  }
+  .intro {
+    color: #88B814;
+    background: #fff;
+    padding: 4px;
+    display: block;
+    font-weight: 900;
+    font-size: 36px;
+    display: inline;
+    line-height: 1.6em;
+  }
+  .strapline {
+    background: #88B814;
+    color: #fff;
+    padding: 4px;
+    display: inline;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.6em;
+  }
+  .subline {
+    background: #88B814;
+    color: #fff;
+    padding: 4px;
+    display: inline;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.6em;
+  }
+  font-weight: 500;
+}
 .no-margin {
   margin: 0;
 }
